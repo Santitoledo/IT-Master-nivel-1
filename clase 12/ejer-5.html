@@ -1,0 +1,11 @@
+<script>
+    var years = [2000,1991,2100,2400,400,1,2001,1700];
+    var biciestos = [];
+
+    for (i in years){
+        if(years[i]% 4 == 0 && years[i] % 100 != 0 || years[i] % 400 == 0){
+            biciestos.push(years[i])
+        }
+    }
+    console.log(biciestos)
+</script>
