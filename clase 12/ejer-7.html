@@ -1,0 +1,17 @@
+<script>
+    var texto = "http://google.com";
+    
+
+    
+        if(((texto.substring(0,7).toLocaleLowerCase()== "http://") || (texto.substring(0,8).toLocaleLowerCase()== "https://"))  && (texto.indexOf(".")> -1) && (texto[texto.length - 1] != ".")
+        && (texto.indexOf("@") == -1)) {
+            console.log(texto);
+        }
+        else{
+            console.log("texto incorrecto");
+        }
+        
+        
+    
+
+</script>
