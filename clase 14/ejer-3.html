@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3-14</title>
+</head>
+<body>
+    <div id="contain">
+        <form id="formulario">
+            <label>Ingrese número</label>
+            <input type="number" id="numero">
+            <input type="button" onclick="agrega()" id="agregar"value="Agregar">
+            <input type="button" onclick="elimina()" id="deshacer" value="Deshacer">
+            <p id="result"></p>
+            
+
+        </form>
+        <h1>Sus n&uacute;meros son:</h1>
+        <ul id="array"></ul>
+        <script>
+            var misNumeros = []
+            var delate = []
+            function agrega(){
+              var  n = document.getElementById("numero").value;
+                
+
+                
+                if(misNumeros.length<=3 && n > 0 ){
+                    misNumeros.push(n);
+                    document.getElementById("result").style.color="green"
+                    document.getElementById("result").innerHTML="Agregado correctamente"
+                    
+                   for(i=0;i<misNumeros.length;i++){
+                       
+                       document.getElementById("array").innerHTML=misNumeros
+                   }
+                   document.getElementById("formulario").reset()
+                }else if(misNumeros.length==4){
+                    document.getElementById("result").style.color="red"
+                    document.getElementById("result").innerHTML="No entran mas números "
+                    document.getElementById("formulario").reset()
+                } else{
+                    document.getElementById("result").style.color="red"
+                    document.getElementById("result").innerHTML="Número incorrecto"
+                    document.getElementById("formulario").reset()
+                }
+            }
+            function elimina(){
+                var  n = document.getElementById("numero").value;
+                if(misNumeros.length>0){
+                    misNumeros.pop(n)
+                    document.getElementById("result").style.color="green"
+                    document.getElementById("result").innerHTML= n + " borrado correctamente"
+                    for(i=0;i<misNumeros.length;i++){
+                       
+                       document.getElementById("array").innerHTML=misNumeros
+                    }
+                }else{
+                    document.getElementById("result").style.color="red"
+                    document.getElementById("result").innerHTML=" no hay nada que borrar"
+                }
+            }
+        </script>
+        
+</body>
+</html>
