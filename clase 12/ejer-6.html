@@ -1,0 +1,12 @@
+<script>
+    var  nombres = ["Dami","pedro","Ana","Jorge","Eugenio","Analía","Amanda","amalia","armando","anacleta"];
+    var conA = [];
+
+    for(i in nombres){
+        if ( (nombres[i][0].toLocaleLowerCase() == "a") && (nombres[i][nombres[i].length-1].toLocaleLowerCase() == "a")) {
+            conA.push(nombres[i])
+
+        }
+    }
+    console.log(conA)
+</script>
