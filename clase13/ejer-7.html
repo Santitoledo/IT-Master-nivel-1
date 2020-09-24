@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 7-13</title>
+</head>
+<body>
+    <div id="contain">
+    <form>
+        <label for="name">Ingrese nombres que empiezan solo con A:</label>
+        <input type="text" placeholder="ingrese nombre.." id="name">
+        <input type="button" onclick="agregar()" id="agrega" value="Agregar">
+        <ul id="lista">
+            <p id="resultados"></p>
+        </ul>
+    </form>
+    </div>
+    <script>
+        var listName = [];
+        function agregar(){
+            var n = document.getElementById("name").value;
+            if (n[0] == "a" || n[0]== "A"){
+                listName.push(n);
+                
+            }else{
+                document.getElementById("resultado").innerHTML= document.write("SOLO CON A!!!")
+            }
+            
+            document.getElementById("resultados").innerHTML=listName;
+            
+        }
+    </script>
+    <style>
+        #contain{
+            width: 400px;
+            margin: 5% auto;
+            min-height: 200px;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+       
+    </style>
+</body>
+</html>
