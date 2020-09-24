@@ -1,0 +1,25 @@
+</head>
+<body>
+    <form>
+        <input type="number" placeholder="ingrese número..." id="numero">
+        <select id="moneda">
+            <option value="pesos">de $ a USD</option>
+            <option value="dolares">de USD a $</option>
+        </select>
+        <input type="button" onclick="calcular()" value="Calcular">
+        <p id="resultado"></p>
+    </form>
+    <script>
+        function calcular(){
+            var n = document.getElementById("numero").value;
+            var opcion = document.getElementById("moneda").value;
+            var cotiza = 130
+                if(opcion == "pesos"){
+                 document.getElementById("resultado").innerHTML= ("$ " + (n/cotiza) )
+                }else{
+                    document.getElementById("resultado").innerHTML= ("USD " + (n*cotiza)) 
+                }
+        }
+    </script>
+</body>
+</html>
