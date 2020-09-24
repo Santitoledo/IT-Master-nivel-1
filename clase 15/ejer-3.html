@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3-15</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<style>
+    #contain{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    input[type="button" i] {
+        background-color: green;
+        width: 500px;
+        height: 100px;
+        font-size: 60px;
+        cursor: pointer;
+    }
+    #dados{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div id="contain">
+        <form>
+            <input type="button" value="Tirar" onclick="tirar()" id="tira">
+            <div id="dados"><img src="https://www.gifsanimados.org/data/media/710/dado-imagen-animada-0015.gif" alt=""></div>
+        </form>
+        <script>
+            function tirar(){
+                var da1= Math.ceil(Math.random()*6)
+                var da2= Math.ceil(Math.random()*6)
+                
+                if (da1 > da2){
+                  
+                    swal.fire("Ganador dado 1", "dado 1 sacó   "+da1+" - dado 2 sacó "+da2 ,"success")
+                      
+                }else if (da1< da2){
+                    
+                    swal.fire("Ganador dado 2", "dado 2 sacó "+da2+" - dado 1 sacó "+da1 ,"success")
+                }else{
+                    
+                    swal.fire("", "empate en " +da1, "warning",{
+                        button: "listo",
+                    })
+                }
+                console.log(`${da1} - ${da2}`)
+            }
+        </script>
+    </div>
+</body>
+</html>
