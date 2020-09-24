@@ -1,0 +1,21 @@
+<script>
+    
+    function positivo(numero){
+        if(typeof(numero) === "number"){
+             if (numero > 0 ) {
+                console.log("es positivo")
+             } else if(numero < 0){
+                 console.log("es negativo")
+             }  else {
+                console.log("es cero")
+        }
+        } else{
+            console.error("no es un número")
+        }
+    }
+    positivo(4);
+    positivo(-5);
+    positivo(0);
+    positivo("dads");
+    positivo(true);
+</script>
