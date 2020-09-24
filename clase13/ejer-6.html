@@ -1,0 +1,56 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 6-13</title>
+</head>
+<body>
+    <div id="contain">
+        <form>
+            <input type="number" placeholder="ingrese año.." id="year">
+            <input type="button" onclick="mundiales()" id="world" value="¿?">
+            <p id="resultado"></p>
+        </form>
+        <script>
+            function mundiales(){
+                var n = document.getElementById("year").value;
+                if (n>=1930 && n % 4 == 2 && n !=1942 && n!=1946 && n<=2018){
+                    document.getElementById("resultado").innerHTML= ("En "+ n + " si se jugó")
+                }else{
+                    document.getElementById("resultado").innerHTML=("En "+ n + " no se jugó" )
+                }
+            }
+        </script>
+        <style>
+            #contain{
+            width: 400px;
+            background-color: grey;
+            min-height: 200px;
+            margin: 5% auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        input[type="number" i]{
+                height: 25px;
+                margin-top: 10%;
+                width: 100px;
+        }
+        input[type="button" i]{
+                height: 30px;
+                margin-top: 5%;
+                background: chocolate;
+        }
+        p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            color: green;
+            width: 100%;
+            text-align: center;
+        }
+        </style>
+    </div>
+</body>
+</html>
