@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2-15</title>
+    <style>
+        #contain{
+            width: 100%;
+            margin: 5% auto;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="contain">
+            <div id="img1"></div> 
+            <div id="img2"></div>  
+            <p id="result"></p>
+    </div>
+
+    <script>
+        var  imagenes = ["https://www.nadaincluido.com/wp-content/uploads/5c-Pai-Canyon-mirador-S.jpg","https://guiatailandesa.com/wp-content/uploads/2018/11/que-ver-y-hacer-en-pai.jpg","https://mochilerosentailandia.com/wp-content/uploads/2015/01/Pai-Thailand-o12.jpg","https://www.saporedicina.com/es/wp-content/uploads/2028/04/viaje-a-pai.jpg","https://red-viajes.com/wp-content/uploads/2019/09/guia-para-la-vida-nocturna-en-pai-tailandia.jpg"]
+        
+        var i = Math.floor(Math.random() * (imagenes.length)); 
+        var j = Math.floor(Math.random() * (imagenes.length));
+        if (i != j){
+            
+            document.getElementById("img1").innerHTML= `<img src=" ${imagenes[i]}" alt="">`
+            document.getElementById("img2").innerHTML=`<img src=" ${imagenes[j]}" alt="">`
+
+            console.log(i)
+            console.log(j) 
+           
+        }else{
+            document.getElementById("result").style.color="red"
+            document.getElementById("result").style.fontSize="50px"
+            document.getElementById("result").innerHTML="Imagenes iguales"
+        }
+    </script>
+    
+</body>
+</html>
