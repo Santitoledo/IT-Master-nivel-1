@@ -1,0 +1,14 @@
+<script>
+    var numeros = [1,44,5,7,41,2,4,11,10]
+    var pares = []
+    var contador = 0;
+   
+    for(i in numeros){
+        if (numeros[i]% 2 == 0 && contador < 3 ){
+            pares.push(numeros[i])
+            contador++
+        }
+    }
+    
+    console.log(pares)
+</script>
