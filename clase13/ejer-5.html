@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 5-13</title>
+</head>
+<body>
+    <div id="contain">
+        <form>
+            <input type="number" placeholder="ingresar año.." id="year">
+            <input type="button" onclick="biciesto()" value="es o no?"id="bici">
+            <p id="resultado"></p>
+        </form>
+    </div>
+    <script>
+        function biciesto(){
+            var n = document.getElementById("year").value;
+            if (n % 4 == 0 && n % 100 != 0 || n % 400 == 0){
+                document.getElementById("resultado").innerHTML=("Es biciesto")
+            }else{
+                document.getElementById("resultado").innerHTML=("No es biciesto")
+            }
+        }
+    </script>
+    <style>
+        #contain{
+            width: 400px;
+            background-color: grey;
+            min-height: 200px;
+            margin: 5% auto;
+        }
+    
+        form{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            
+        }
+        input[type="number" i]{
+                height: 25px;
+                margin-top: 5%;
+                width: 100px;
+        }
+        
+        input[type="button" i]{
+                height: 30px;
+                margin-top: 5%;
+                background: chocolate;
+        }
+        p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            color: green;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
