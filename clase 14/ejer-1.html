@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1-14</title>
+</head>
+<body>
+    <div id="contain">
+        <form id="formu">
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre" id="nombre">
+            <label>Email</label>
+            <input type="email" placeholder="Email Address" id="email">
+            <input type="button" value="Validar" id="valida" onclick="validar()">
+            <p id="resultado"></p>
+        </form>
+        <script>
+            function validar(){
+                var n = document.getElementById("nombre").value;
+                var e = document.getElementById("email").value;
+                document.getElementById("formu").reset()
+                if(n !="number" && n.length >=3 && e.indexOf("@")>-1 && e.length >=6){
+                    document.getElementById("resultado").innerHTML="correcto"
+                    document.getElementById("resultado").style.color="green"
+                } else{
+                    document.getElementById("resultado").innerHTML="incorrecto"
+                    document.getElementById("resultado").style.color="red"
+                }
+            }
+        </script>
+        
+    </div>
+    
+</body>
+</html>
