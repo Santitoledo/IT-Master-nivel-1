@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2-14</title>
+</head>
+<body>  
+    <div id="contain">
+        <form>
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre" id="nombre">
+            <label>Como nos conoció</label>
+            <select id="elije">
+                <option value="0">elegir</option>
+                <option value="1">Recomendacíon</option>
+                <option value="2">Web</option>
+                <option value="3">Publicidad</option>
+            </select>
+            
+            <input type="checkbox" name="" id="confirm" > <label>Aceptar</label>
+            <input type="button" onclick="enviar()" id="valida" value="Enviar">
+            <p id="result"></p>
+        </form>
+        <script>
+            function enviar(){
+                n = document.getElementById("nombre").value;
+                e = document.getElementById("elije").value;
+                c = document.getElementById("confirm").checked;
+                if (n.length > 4 && e > 0 && c == 1 ){
+                    document.getElementById("result").style.color= "green"
+                    document.getElementById("result").style.fontSize="30px"
+                    document.getElementById("result").innerHTML="correcto"
+                }else{
+                    document.getElementById("result").innerHTML="incorrecto"
+                }
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
