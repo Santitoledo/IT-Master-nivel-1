@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contain{
+            width: 100%;
+            margin: 5% auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        
+       <div id="contain">
+            <img src="" id="mostrar" alt="700" width="500">
+       </div>
+    </form>
+    <script>
+        var  imagenes = ["https://www.nadaincluido.com/wp-content/uploads/5c-Pai-Canyon-mirador-S.jpg","https://guiatailandesa.com/wp-content/uploads/2018/11/que-ver-y-hacer-en-pai.jpg","https://mochilerosentailandia.com/wp-content/uploads/2015/01/Pai-Thailand-o12.jpg","https://www.saporedicina.com/es/wp-content/uploads/2028/04/viaje-a-pai.jpg","https://red-viajes.com/wp-content/uploads/2019/09/guia-para-la-vida-nocturna-en-pai-tailandia.jpg"]
+        var i = Math.floor(Math.random() * (imagenes.length)); 
+        console.log(i);
+        console.log(imagenes[i]); 
+        document.getElementById("mostrar").setAttribute("src",imagenes[i])
+    
+    </script>
+
+</body>
+</html>
