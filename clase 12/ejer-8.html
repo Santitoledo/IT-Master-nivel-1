@@ -1,0 +1,20 @@
+<script>
+    var comidas = ["pollo", "asado","fideos","pescado"];
+    var buscar = "pollo"
+    var posicion = comidas.indexOf(buscar);
+    
+    if(posicion > -1) {
+        console.log(posicion)
+        if (posicion == 0){
+        console.log(buscar + "primero de la lista")
+         }
+            if(posicion == (comidas.length-1)){
+        console.log(buscar + " ultimo de la lista")
+        }
+    }
+    else{
+        console.log(buscar + " no se encuentra")
+    }
+   
+
+</script>
