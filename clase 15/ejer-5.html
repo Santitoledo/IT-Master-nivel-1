@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 5-15</title>
+</head>
+<body>
+    <div id="contain">
+        <form id="formu">
+            <label>Ingrese número</label>
+            <input type="text" placeholder="número..." id="numero">
+            <input type="button" onclick="agregar()" id="agrega" value="agregar">
+
+        </form>
+        <ul id="lista"></ul>
+        <p id="result"></p>
+    </div>
+ </body>
+<script>
+    var numeros = []
+    function agregar(){
+        var total= 0
+        var n = document.getElementById("numero").value 
+        document.getElementById("formu").reset()
+        if(!isNaN(n)){
+            document.getElementById("lista").insertAdjacentHTML("beforeend",`<li>${n}</li>`)           
+           
+            numeros.push(n)   
+            for (i of numeros){
+            
+            total+= parseInt(i)
+            document.getElementById("result").innerHTML = total
+        }  
+        }
+    }
+</script>
+</html>
