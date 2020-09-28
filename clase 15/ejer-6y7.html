@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 6-15</title>
+</head>
+<body onload="reloj()">
+    <h1 id="reloj"></h1>
+    <p id="forend"></p>
+</body>
+<script>
+    function reloj(){
+        var f = new Date();
+        var hora = f.getHours();
+        var minu = f.getMinutes();
+        var seg = f.getSeconds();
+        var h1 = 24
+        var m1 = 60
+        var s1 = 60
+        var hf = h1 - hora
+        var mf= m1 - minu
+        var sf = s1 - seg
+        if(seg< 10){
+            s = `0${seg}`
+        }else{
+            s = seg
+        }
+        if(minu<10){
+            m = `0${minu}`
+        }else{
+            m =minu
+        }
+        if (hora<10){
+            h=`0${hora}`
+        }else{
+            h = hora
+        }
+        if (hf<10){
+            hff = `0${hf}`
+        }else{
+            hff= hf
+        }
+        if (mf<10){
+            mff = `0${mf}`
+        }else{
+            mff= mf
+        }
+        if (sf<10){
+            sff = `0${sf}`
+        }else{
+            sff= sf
+        }
+
+        document.getElementById("reloj").innerHTML = `la hora es --- ${hora}:${m}:${s}`
+        document.getElementById("forend").innerHTML = ` para terminar el día faltan--- ${hff}:${mff}:${sff}`
+        setTimeout("reloj()",1000)
+    }
+</script>
+</html>
