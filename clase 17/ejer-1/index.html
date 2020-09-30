@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">    
+     <style>
+         header h1{
+             font-family: 'Architects Daughter', cursive;
+
+         }
+     </style>
+</head>
+<body>
+    <div id="root">
+        <header data-componente="Header">
+            <h1>El título {prop}</h1>
+        </header>
+        <nav>
+            <ul class="menu">
+              <li><a href="/"></a>Home</li>
+              <li><a href="/contacto"></a>Contacto</li>
+              <li><a href="/redes"></a>Redes</li>
+            </ul>
+        </nav>
+        <main>
+            <h2>{prop.titulo2}</h2>
+            <img src={prop.imagen} alt={prop.titulo2}>
+            <p>{prop.parrafo}</p>
+        </main>
+        <footer>
+            <p><small>{prop.footer}</small></p>
+        </footer>
+    </div>
+</body>
+</html>
