@@ -1,0 +1,56 @@
+body {
+  background-color:gray;
+
+}
+#root{
+  width: 100%;
+  float: left;
+}
+
+header { 
+  text-align: center;
+  
+}
+header h1{
+  font-size: 70px;
+}
+ul{
+  width: 100%;
+  padding:0;
+  list-style: none;
+  float: left;
+  text-align: center;
+  background-color: green;
+}
+li{
+  float: left;
+  width: 30%;
+}
+main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main h2{
+  float: left;
+  width: 100%;
+  text-align: center;
+  box-sizing: content-box;
+}
+main img{
+  margin: 2% 30%;
+  float: left;
+  
+  
+}
+main p{
+  text-align: center;
+  text-justify: auto;
+  float: left;
+}
+p{
+  text-align: center;
+  width: 100%;
+  float: left;
+}
