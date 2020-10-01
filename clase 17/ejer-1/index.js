@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-const enlaces = ['Home','Contacto','Redes']
+const enlaces = ["Home","Contacto","Redes"]
 
 const App = () =>(
    <div>
