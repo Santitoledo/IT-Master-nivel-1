@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3-18</title>
+</head>
+<body>
+    <input type="button" onclick="actores()" value="mostrar actores">
+    <h1>Actores</h1>
+    <ul id="act"></ul>
+    <script>
+        const peliculas = [
+    { pelicula: "Inception", director: "Christopher Nolan", actor: "Leonardo DiCaprio" },
+    { pelicula: "500 Days of Summer", director: "Marc Webb", actor: "Joseph Gordon-Levitt" },
+    { pelicula: "Dark Shadows", director: "Tim Burton", actor: "Johnny Depp" },
+    { pelicula: "Volver al Futuro", director: "Robert Zemeckis", actor: "Michael Fox"}			
+    ];
+   
+    function actores(){
+               for(i of peliculas){
+                //le asigno a la variable "lista" lo que quiero se vea en id "act"
+                const lista = document.getElementById("act");
+                //afterend me indica donde lo agrega. 
+                lista.insertAdjacentHTML(`afterend`,`<li>${i.actor}</li>`);
+                }
+     }
+             
+    </script>
+</body>
+</html>
