@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 7-18</title>
+</head>
+<body>
+    <h1>Los mayores de 18 son</h1>
+    <ul id="mayores"></ul>
+    <h2>Los menores de 18 son</h2>
+    <ul id="menores"></ul>
+    <script>
+        const nombres = [{nombre:"Virginia",apellido:"Giovagnoli",edad:"33"},{nombre:"Roberto",apellido:"Gomez",edad:"50"},{nombre:"Marta",apellido:"Perez",edad:"17"},{nombre:"Emilio",apellido:"Monjes",edad:"25"},{nombre:"Ines",apellido:"Toledo",edad:"1"}]
+        for(i of nombres){
+            const lista = document.getElementById("mayores")
+            const lista2 = document.getElementById("menores")
+            if(i.edad >18){
+                lista.insertAdjacentHTML(`afterend`,`<li>${i.nombre} ${i.apellido}</li>`)
+            }else{
+                lista2.insertAdjacentHTML(`afterend`,`<li>${i.nombre} ${i.apellido}</li>`)
+            }
+        }
+    </script>
+</body>
+</html>
