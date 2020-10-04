@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 4-18</title>
+</head>
+<body>
+    <input type="button" onclick="action()" value="presione">
+    <div id="color">
+
+    </div>
+
+    <script>
+        const estilos = {"backgroundColor":"blue", "width": "450px","height":"700px"}
+        const col = document.getElementById("color")
+        function action(){
+            col.style.backgroundColor=`${estilos.backgroundColor}`
+            col.style.width=`${estilos.width}`
+            col.style.height=`${estilos.height}`
+        }
+    </script>
+    
+</body>
+</html>
