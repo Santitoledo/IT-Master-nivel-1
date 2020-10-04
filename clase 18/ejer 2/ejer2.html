@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2-18</title>
+</head>
+<body>
+    <input type="button" onclick="mostrar()" value="Presione aqui">
+    <header></header>
+    <img src="" alt="">
+  <script>
+      const datos = {"albumId": 1,"id": 1,"title": "accusamus beatae ad facilis cum similique qui sunt","url": "https://via.placeholder.com/600/92c952"}
+      //a imagen cono querySelector le asgino el primer img q encuentre
+      const imagen = document.querySelector("img")
+      function mostrar () {
+          //con setAttributes le asigno a "src" el dato del json que deseo.  
+          imagen.setAttribute("src",datos.url)
+          //en header muestro dentro de un H1 el dato que deseo del json "datos"
+          document.querySelector("header").innerHTML=`<h1>${datos.title}</h1>`
+
+      }
+  </script>  
+</body>
+</html>
