@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 5-18</title>
+</head>
+<body>
+    <p id="primer"></p>
+    <p id="ultimo"></p>
+    <script>
+        const nombres = [{nombre:"Virginia",apellido:"Giovagnoli"},{nombre:"Roberto",apellido:"Gomez"},{nombre:"Marta",apellido:"Perez"},{nombre:"Emilio",apellido:"Monjes"},{nombre:"Ines",apellido:"Toledo"}]
+        
+        document.getElementById("primer").innerHTML=(`El primero de la lista es :  ${nombres[0].nombre}  ${nombres[0].apellido}`)
+        document.getElementById("ultimo").innerHTML=(`El ultimo de la lista es :  ${nombres[nombres.length-1].nombre}  ${nombres[nombres.length-1].apellido}`)
+    </script>
+</body>
+</html>
