@@ -1,0 +1,42 @@
+body {
+  background-color:rgb(105, 175, 105);
+
+}
+#contain{
+  width: 90%;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h1{
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+}
+nav {
+  width: 90%;
+  border: 2px  black;
+  margin-top: 1%;
+  margin-left: 5%;
+  padding: 0;
+  background-color: rgb(178, 226, 156);
+  list-style: none;
+}
+a{
+  margin-left: 2%;
+}
+
+figure{
+  width: 90%;
+  margin: 2% 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+figure figcaption{
+  width: 100%; 
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+}
