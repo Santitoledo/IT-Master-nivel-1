@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejericio 5-18</title>
+</head>
+<body>
+   
+    <p id="productos"></p>
+    
+    <p id="total"></p>
+ <script>
+    const productos = [{producto:"webcam", precio:"25000"},{producto:"TV 4k",precio:"55000"},{producto:"Mouse",precio:"1000"},{producto:"Teclado",precio:"1500"},{producto:"Cable HDMI",precio:"500"}]
+    document.getElementById("productos").style.fontSize="50px"
+    document.getElementById("productos").innerHTML="La cantidad de productos es " + productos.length
+    var tot = 0
+    for (let i of productos){
+        tot += parseInt(i.precio)
+    }
+    document.getElementById("total").style.fontSize="50px"
+    document.getElementById("total").innerHTML= "el total de la compra es de $" + tot
+
+</script>
+</body>
+</html>
