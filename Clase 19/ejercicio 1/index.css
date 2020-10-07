@@ -1,0 +1,9 @@
+body {
+  background-color:rgb(105, 175, 105);
+
+}
+
+#contain{
+  width: 600px;
+  margin: 10% auto;
+}
