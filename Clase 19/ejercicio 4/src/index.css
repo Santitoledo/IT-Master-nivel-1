@@ -1,0 +1,29 @@
+body {
+  background-color:rgb(105, 175, 105);
+
+}
+
+#contain{
+  width: 600px;
+  margin: 10% auto;
+  background-color: rgb(42, 119, 46);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+header{
+  width: 100%;
+}
+header h1{
+  width: 100%;
+  font-family: monospace;
+}
+button{
+  border-radius: 10px;
+  cursor: pointer;
+}
+#caja{
+  width: 100%;
+  font-family: fantasy;
+}
