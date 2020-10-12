@@ -1,0 +1,16 @@
+body {
+  background-color:rgb(105, 175, 105);
+
+}
+
+#contain{
+  width: 600px;
+  margin: 10% auto;
+  background-color: rgb(42, 119, 46);
+  border-radius: 8px;
+  text-align: center;
+  
+}
+#caja{
+  margin-top: 5%;
+}
