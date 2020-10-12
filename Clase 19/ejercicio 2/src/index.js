@@ -19,7 +19,7 @@ const App = () =>{
   return (
     <div id="contain">
       <h1>La peli es : {peli}</h1>
-      <button onClick={changePeli}>Cambia la peli</button>
+      <button onClick={changePeli}>Cambia la peli ☝</button>
     </div>
   );
 };
