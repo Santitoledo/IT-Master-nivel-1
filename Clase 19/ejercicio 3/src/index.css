@@ -1,0 +1,22 @@
+body {
+  background-color:rgb(105, 175, 105);
+
+}
+
+#contain{
+  width: 600px;
+  margin: 10% auto;
+  background-color: rgb(42, 119, 46);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+h1{
+  width: 100%;
+  font-family: monospace;
+}
+ul{
+  list-style: square;
+  text-align: left;
+}
