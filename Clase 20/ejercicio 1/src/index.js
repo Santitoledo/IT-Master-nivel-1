@@ -22,8 +22,11 @@ const App = () => {
             Generar password.
           </Button>
         </div> 
-      
-      <p>Nueva clave: {password}</p>
+         {
+       //  Verificamos si está seteado el array con una passwrod y mostramos solo si eso se cumple.
+      password?<p>Nueva clave: <span>{password}</span></p>:null
+     }
+  
     </div>
     </>
   )
